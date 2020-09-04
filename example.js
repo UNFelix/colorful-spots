@@ -16,7 +16,7 @@ function draw(spot){
   spot.light+=0.5
   context.beginPath()
   context.fillStyle = 'hsl('+spot.hue+', 99%, '+spot.light+'%)'
-  context.arc(spot.x, spot.y, spot.r++, 0, 2 * Math.PI)
+  context.arc(spot.x, spot.y++, spot.r++, 0, 2 * Math.PI)
   context.fill()
 }
 function drawSpots(){
